@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "an example of testing babel plugins with jest",
   "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
   "repository": {
     "url": "git@github.com:brigand/babel-plugin-testing-example.git",
     "type": "git"
