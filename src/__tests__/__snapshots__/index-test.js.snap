@@ -1,0 +1,5 @@
+exports[`test works 1`] = `
+"
+const baz = 1;
+if (baz) console.log(baz);"
+`;
