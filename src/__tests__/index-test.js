@@ -19,3 +19,19 @@ it('contains baz', () => {
   assert.equal(declaration.id.name, 'baz');
 });
 
+
+it('foo is an alias to baz', () => {
+  var input = `
+    var foo = 1;
+    // test that foo was renamed to baz
+    var res = baz;
+  `;
+  var {code} = babel.transform(input, {plugins: [plugin]});
+  var f = new Function(`
+    ${code};
+    return res;
+  `);
+  var res = f();
+  assert(res === 1, 'res is 1');
+});
+
