@@ -1,3 +1,430 @@
+exports[`test contains baz 1`] = `
+"File (1:0,4:0)
+  comments: []
+  program: Program (1:0,4:0)
+    body:
+      - VariableDeclaration (2:0,2:14)
+          declarations:
+            - VariableDeclarator (2:6,2:13)
+                id: Identifier (2:6,2:9)
+                  name: \'baz\'
+                init: NumericLiteral (2:12,2:13)
+                  extra:
+                    raw: \'1\'
+                    rawValue: 1
+                  value: 1
+          kind: \'const\'
+      - IfStatement (3:0,3:26)
+          alternate: null
+          consequent: ExpressionStatement (3:9,3:26)
+            expression: CallExpression (3:9,3:25)
+              arguments:
+                - Identifier (3:21,3:24)
+                    name: \'baz\'
+              callee: MemberExpression (3:9,3:20)
+                computed: false
+                object: Identifier (3:9,3:16)
+                  name: \'console\'
+                property: Identifier (3:17,3:20)
+                  name: \'log\'
+          test: Identifier (3:4,3:7)
+            name: \'baz\'
+    directives: []
+    sourceType: \'module\'
+  tokens:
+    -
+        end: 6
+        loc:
+          end:
+            column: 5
+            line: 2
+          start:
+            column: 0
+            line: 2
+        start: 1
+        type:
+          beforeExpr: false
+          binop: null
+          isAssign: false
+          isLoop: false
+          keyword: \'const\'
+          label: \'const\'
+          postfix: false
+          prefix: false
+          rightAssociative: false
+          startsExpr: false
+          updateContext: null
+        value: \'const\'
+    -
+        end: 10
+        loc:
+          end:
+            column: 9
+            line: 2
+          start:
+            column: 6
+            line: 2
+        start: 7
+        type:
+          beforeExpr: false
+          binop: null
+          isAssign: false
+          isLoop: false
+          keyword: undefined
+          label: \'name\'
+          postfix: false
+          prefix: false
+          rightAssociative: false
+          startsExpr: true
+          updateContext: Function
+        value: \'foo\'
+    -
+        end: 12
+        loc:
+          end:
+            column: 11
+            line: 2
+          start:
+            column: 10
+            line: 2
+        start: 11
+        type:
+          beforeExpr: true
+          binop: null
+          isAssign: true
+          isLoop: false
+          keyword: undefined
+          label: \'=\'
+          postfix: false
+          prefix: false
+          rightAssociative: false
+          startsExpr: false
+          updateContext: null
+        value: \'=\'
+    -
+        end: 14
+        loc:
+          end:
+            column: 13
+            line: 2
+          start:
+            column: 12
+            line: 2
+        start: 13
+        type:
+          beforeExpr: false
+          binop: null
+          isAssign: false
+          isLoop: false
+          keyword: undefined
+          label: \'num\'
+          postfix: false
+          prefix: false
+          rightAssociative: false
+          startsExpr: true
+          updateContext: null
+        value: 1
+    -
+        end: 15
+        loc:
+          end:
+            column: 14
+            line: 2
+          start:
+            column: 13
+            line: 2
+        start: 14
+        type:
+          beforeExpr: true
+          binop: null
+          isAssign: false
+          isLoop: false
+          keyword: undefined
+          label: \';\'
+          postfix: false
+          prefix: false
+          rightAssociative: false
+          startsExpr: false
+          updateContext: null
+        value: undefined
+    -
+        end: 18
+        loc:
+          end:
+            column: 2
+            line: 3
+          start:
+            column: 0
+            line: 3
+        start: 16
+        type:
+          beforeExpr: false
+          binop: null
+          isAssign: false
+          isLoop: false
+          keyword: \'if\'
+          label: \'if\'
+          postfix: false
+          prefix: false
+          rightAssociative: false
+          startsExpr: false
+          updateContext: null
+        value: \'if\'
+    -
+        end: 20
+        loc:
+          end:
+            column: 4
+            line: 3
+          start:
+            column: 3
+            line: 3
+        start: 19
+        type:
+          beforeExpr: true
+          binop: null
+          isAssign: false
+          isLoop: false
+          keyword: undefined
+          label: \'(\'
+          postfix: false
+          prefix: false
+          rightAssociative: false
+          startsExpr: true
+          updateContext: Function
+        value: undefined
+    -
+        end: 23
+        loc:
+          end:
+            column: 7
+            line: 3
+          start:
+            column: 4
+            line: 3
+        start: 20
+        type:
+          beforeExpr: false
+          binop: null
+          isAssign: false
+          isLoop: false
+          keyword: undefined
+          label: \'name\'
+          postfix: false
+          prefix: false
+          rightAssociative: false
+          startsExpr: true
+          updateContext: Function
+        value: \'foo\'
+    -
+        end: 24
+        loc:
+          end:
+            column: 8
+            line: 3
+          start:
+            column: 7
+            line: 3
+        start: 23
+        type:
+          beforeExpr: false
+          binop: null
+          isAssign: false
+          isLoop: false
+          keyword: undefined
+          label: \')\'
+          postfix: false
+          prefix: false
+          rightAssociative: false
+          startsExpr: false
+          updateContext: Function
+        value: undefined
+    -
+        end: 32
+        loc:
+          end:
+            column: 16
+            line: 3
+          start:
+            column: 9
+            line: 3
+        start: 25
+        type:
+          beforeExpr: false
+          binop: null
+          isAssign: false
+          isLoop: false
+          keyword: undefined
+          label: \'name\'
+          postfix: false
+          prefix: false
+          rightAssociative: false
+          startsExpr: true
+          updateContext: Function
+        value: \'console\'
+    -
+        end: 33
+        loc:
+          end:
+            column: 17
+            line: 3
+          start:
+            column: 16
+            line: 3
+        start: 32
+        type:
+          beforeExpr: false
+          binop: null
+          isAssign: false
+          isLoop: false
+          keyword: undefined
+          label: \'.\'
+          postfix: false
+          prefix: false
+          rightAssociative: false
+          startsExpr: false
+          updateContext: null
+        value: undefined
+    -
+        end: 36
+        loc:
+          end:
+            column: 20
+            line: 3
+          start:
+            column: 17
+            line: 3
+        start: 33
+        type:
+          beforeExpr: false
+          binop: null
+          isAssign: false
+          isLoop: false
+          keyword: undefined
+          label: \'name\'
+          postfix: false
+          prefix: false
+          rightAssociative: false
+          startsExpr: true
+          updateContext: Function
+        value: \'log\'
+    -
+        end: 37
+        loc:
+          end:
+            column: 21
+            line: 3
+          start:
+            column: 20
+            line: 3
+        start: 36
+        type:
+          beforeExpr: true
+          binop: null
+          isAssign: false
+          isLoop: false
+          keyword: undefined
+          label: \'(\'
+          postfix: false
+          prefix: false
+          rightAssociative: false
+          startsExpr: true
+          updateContext: Function
+        value: undefined
+    -
+        end: 40
+        loc:
+          end:
+            column: 24
+            line: 3
+          start:
+            column: 21
+            line: 3
+        start: 37
+        type:
+          beforeExpr: false
+          binop: null
+          isAssign: false
+          isLoop: false
+          keyword: undefined
+          label: \'name\'
+          postfix: false
+          prefix: false
+          rightAssociative: false
+          startsExpr: true
+          updateContext: Function
+        value: \'foo\'
+    -
+        end: 41
+        loc:
+          end:
+            column: 25
+            line: 3
+          start:
+            column: 24
+            line: 3
+        start: 40
+        type:
+          beforeExpr: false
+          binop: null
+          isAssign: false
+          isLoop: false
+          keyword: undefined
+          label: \')\'
+          postfix: false
+          prefix: false
+          rightAssociative: false
+          startsExpr: false
+          updateContext: Function
+        value: undefined
+    -
+        end: 42
+        loc:
+          end:
+            column: 26
+            line: 3
+          start:
+            column: 25
+            line: 3
+        start: 41
+        type:
+          beforeExpr: true
+          binop: null
+          isAssign: false
+          isLoop: false
+          keyword: undefined
+          label: \';\'
+          postfix: false
+          prefix: false
+          rightAssociative: false
+          startsExpr: false
+          updateContext: null
+        value: undefined
+    -
+        end: 43
+        loc:
+          end:
+            column: 0
+            line: 4
+          start:
+            column: 0
+            line: 4
+        start: 43
+        type:
+          beforeExpr: false
+          binop: null
+          isAssign: false
+          isLoop: false
+          keyword: undefined
+          label: \'eof\'
+          postfix: false
+          prefix: false
+          rightAssociative: false
+          startsExpr: false
+          updateContext: null
+        value: undefined"
+`;
+
 exports[`test works 1`] = `
 "
 const baz = 1;

@@ -13,6 +13,7 @@
   "author": "Frankie Bagnardi <f.bagnardi@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "ast-pretty-print": "^1.1.5",
     "babel-core": "^6.18.2",
     "babel-traverse": "^6.19.0",
     "jest": "^17.0.3"

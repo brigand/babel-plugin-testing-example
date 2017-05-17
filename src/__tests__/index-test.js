@@ -1,6 +1,7 @@
 const babel = require('babel-core');
 const plugin = require('../');
 const assert = require('assert');
+const printAst = require('ast-pretty-print');
 
 const example = `
 const foo = 1;
@@ -17,5 +18,6 @@ it('contains baz', () => {
   const program = ast.program;
   const declaration = program.body[0].declarations[0];
   assert.equal(declaration.id.name, 'baz');
+  expect(printAst(ast)).toMatchSnapshot();
 });
 
