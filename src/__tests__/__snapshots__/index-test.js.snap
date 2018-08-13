@@ -1,5 +1,250 @@
-exports[`test works 1`] = `
+exports[`test full files work 1`] = `
+"\"use strict\";
+
+try {
+  angular.module(\"mpContainerTranslations\");
+} catch (e) {
+  angular.module(\"mpContainerTranslations\", [\"pascalprecht.translate\"]);
+}
+angular.module(\"mpContainerTranslations\").config([\"$translateProvider\", function (a) {
+  var b = {
+    manage_premium: {
+      modals: {
+        domain_connection_error_purchased_elsewhere_support_link: \"domain_connection_error_purchased_elsewhere_support_link\",
+        restart_connection_wizard: \"restart_connection_wizard\",
+        continue: \"continue\",
+        cancel: \"cancel\",
+        close: \"close\",
+        check_domain_connection: {
+          to_make_sure_restart_wizard: \"to_make_sure_restart_wizard\",
+          does_not_point_to_wix_error: \"does_not_point_to_wix_error\",
+          general_error: \"general_error\",
+          title: \"title\"
+        },
+        domain_connection_confirmed: {
+          congratulations: \"congratulations\",
+          title: \"title\"
+        }
+      },
+      container: {
+        header_billing_and_payments: \"header_billing_and_payments\",
+        header_mailboxes: \"header_mailboxes\",
+        header_domains: \"header_domains\",
+        header_premium_plan: \"header_premium_plan\",
+        page_title: \"page_title\"
+      },
+      container_premium: \"container_premium\"
+    }
+  };
+  a.translations(\"en\", b), a.translations(b), a.preferredLanguage && a.preferredLanguage(\"en\");
+}]).value(\"preferredLanguage\", \"en\");
+try {
+  angular.module(\"premuimUiLibTranslations\");
+} catch (e) {
+  angular.module(\"premuimUiLibTranslations\", [\"pascalprecht.translate\"]);
+}
+angular.module(\"premuimUiLibTranslations\").config([\"$translateProvider\", function (a) {
+  var b = {
+    validator: {
+      messages: {
+        general_error: \"general_error\",
+        premium_validation_drop_down_required: \"premium_validation_drop_down_required\",
+        premium_validation_postal_code: \"premium_validation_postal_code\",
+        premium_validation_email: \"premium_validation_email\",
+        premium_validation_is_required: \"premium_validation_is_required\",
+        premium_validation_required: \"premium_validation_required\",
+        premium_validation_max_length: \"premium_validation_max_length\",
+        premium_validation_min_length: \"premium_validation_min_length\"
+      }
+    },
+    dialog_default: {
+      error_dialog_title: \"error_dialog_title\",
+      button_cancel: \"button_cancel\",
+      button_ok: \"button_ok\"
+    },
+    views: {
+      general_error: {
+        click_reload_to_try_again: \"click_reload_to_try_again\",
+        something_weird_just_happen: \"something_weird_just_happen\"
+      },
+      restricted_error: {
+        go_to_site_dashboard: \"go_to_site_dashboard\",
+        learn_more: \"learn_more\",
+        learn_more_url: \"learn_more_url\",
+        sorry_only_site_owner_can_access_this_page: \"sorry_only_site_owner_can_access_this_page\"
+      }
+    },
+    modals: {
+      general_error: {
+        ok: \"ok\",
+        general_error_title: \"general_error_title\",
+        something_went_wrong: \"something_went_wrong\"
+      }
+    },
+    billing_and_payments_PaymentMethodSubType_MP_OXXO: \"billing_and_payments_PaymentMethodSubType_MP_OXXO\",
+    billing_and_payments_PaymentMethodSubType_MP_BANAMEX: \"billing_and_payments_PaymentMethodSubType_MP_BANAMEX\",
+    billing_and_payments_PaymentMethodSubType_MP_BANCOMER: \"billing_and_payments_PaymentMethodSubType_MP_BANCOMER\",
+    billing_and_payments_PaymentMethodSubType_MP_SERFIN: \"billing_and_payments_PaymentMethodSubType_MP_SERFIN\",
+    billing_and_payments_PaymentMethodSubType_AP_BOLETO: \"billing_and_payments_PaymentMethodSubType_AP_BOLETO\",
+    billing_and_payments_PaymentMethodSubType_PAYU_CREDIT_CARD: \"billing_and_payments_PaymentMethodSubType_PAYU_CREDIT_CARD\",
+    billing_and_payments_PaymentMethodSubType_PAYU_DEBIT_CARD: \"billing_and_payments_PaymentMethodSubType_PAYU_DEBIT_CARD\",
+    billing_and_payments_PaymentMethodSubType_PAYU_NET_BANKING: \"billing_and_payments_PaymentMethodSubType_PAYU_NET_BANKING\",
+    billing_and_payments_BillingAccountType_CREDIT_CARD: \"billing_and_payments_BillingAccountType_CREDIT_CARD\",
+    billing_and_payments_BillingAccountType_E_CHECK: \"billing_and_payments_BillingAccountType_E_CHECK\",
+    billing_and_payments_BillingAccountType_BANK_DRAFT_ACCOUNT: \"billing_and_payments_BillingAccountType_BANK_DRAFT_ACCOUNT\",
+    billing_and_payments_BillingAccountType_MANUAL_PAYMENT_ACCOUNT: \"billing_and_payments_BillingAccountType_MANUAL_PAYMENT_ACCOUNT\",
+    billing_and_payments_BillingAccountType_PAY_PAL: \"billing_and_payments_BillingAccountType_PAY_PAL\",
+    billing_and_payments_BillingAccountType_WIRE_TRANSFER_ACCOUNT: \"billing_and_payments_BillingAccountType_WIRE_TRANSFER_ACCOUNT\",
+    billing_and_payments_BillingAccountType_WALLET_YANDEX: \"billing_and_payments_BillingAccountType_WALLET_YANDEX\",
+    billing_and_payments_BillingAccountType_MERCADO_PAGO_RECURRING: \"billing_and_payments_BillingAccountType_MERCADO_PAGO_RECURRING\",
+    billing_and_payments_BillingAccountType_CREDITS_PREPAID_CARD: \"billing_and_payments_BillingAccountType_CREDITS_PREPAID_CARD\",
+    billing_and_payments_BillingAccountType_REG_DOT_RU: \"billing_and_payments_BillingAccountType_REG_DOT_RU\",
+    billing_and_payments_BillingAccountType_SEPA_DIRECT_DEBIT: \"billing_and_payments_BillingAccountType_SEPA_DIRECT_DEBIT\",
+    billing_and_payments_BillingAccountType_VIRTUAL_MONEY: \"billing_and_payments_BillingAccountType_VIRTUAL_MONEY\",
+    billing_and_payments_BillingAccountType_ACCOUNT_CREDIT: \"billing_and_payments_BillingAccountType_ACCOUNT_CREDIT\",
+    billing_and_payments_BillingAccountType_CASH: \"billing_and_payments_BillingAccountType_CASH\",
+    billing_and_payments_BillingAccountType_BANK_TRANSFER: \"billing_and_payments_BillingAccountType_BANK_TRANSFER\",
+    billing_and_payments_Cash: \"billing_and_payments_Cash\",
+    billing_and_payments_CreditCardType_Visa: \"billing_and_payments_CreditCardType_Visa\",
+    billing_and_payments_CreditCardType_MasterCard: \"billing_and_payments_CreditCardType_MasterCard\",
+    billing_and_payments_CreditCardType_AMEX: \"billing_and_payments_CreditCardType_AMEX\",
+    billing_and_payments_CreditCardType_Discover: \"billing_and_payments_CreditCardType_Discover\",
+    billing_and_payments_CreditCardType_JCB: \"billing_and_payments_CreditCardType_JCB\",
+    billing_and_payments_CreditCardType_ENROUTE: \"billing_and_payments_CreditCardType_ENROUTE\",
+    billing_and_payments_CreditCardType_Diners: \"billing_and_payments_CreditCardType_Diners\",
+    billing_and_payments_CreditCardType_SOLO: \"billing_and_payments_CreditCardType_SOLO\",
+    billing_and_payments_CreditCardType_MASTERO: \"billing_and_payments_CreditCardType_MASTERO\",
+    billing_and_payments_CreditCardType_SBI_MAESTRO: \"billing_and_payments_CreditCardType_SBI_MAESTRO\",
+    billing_and_payments_CreditCardType_VISA_DELTA: \"billing_and_payments_CreditCardType_VISA_DELTA\",
+    billing_and_payments_CreditCardType_BANCARD: \"billing_and_payments_CreditCardType_BANCARD\",
+    billing_and_payments_CreditCardType_ELECTRON: \"billing_and_payments_CreditCardType_ELECTRON\",
+    billing_and_payments_CreditCardType_MAESTR_UK: \"billing_and_payments_CreditCardType_MAESTR_UK\",
+    billing_and_payments_CreditCardType_CARTE_BLUE: \"billing_and_payments_CreditCardType_CARTE_BLUE\",
+    billing_and_payments_CreditCardType_ELO: \"billing_and_payments_CreditCardType_ELO\",
+    billing_and_payments_bank_transfer: \"billing_and_payments_bank_transfer\",
+    billing_and_payments_CreditCardType_undefined: \"billing_and_payments_CreditCardType_undefined\",
+    billing_and_payments_CreditCardType_Aura: \"billing_and_payments_CreditCardType_Aura\",
+    billing_and_payments_CreditCardType_CARTE_BANCAIRE: \"billing_and_payments_CreditCardType_CARTE_BANCAIRE\",
+    billing_and_payments_CreditCardType_Dankort: \"billing_and_payments_CreditCardType_Dankort\",
+    billing_and_payments_CreditCardType_Postepay: \"billing_and_payments_CreditCardType_Postepay\",
+    billing_and_payments_CreditCardType_UnionPay: \"billing_and_payments_CreditCardType_UnionPay\",
+    premium: {
+      enums: {
+        paymentCycle_ONE_TIME_Capitalized: \"paymentCycle_ONE_TIME_Capitalized\",
+        paymentCycle_YEARS_Capitalized: \"paymentCycle_YEARS_Capitalized\",
+        paymentCycle_YEAR_Capitalized: \"paymentCycle_YEAR_Capitalized\",
+        paymentCycle_YEARLY_Capitalized: \"paymentCycle_YEARLY_Capitalized\",
+        paymentCycle_SEMI_ANNUALLY_Capitalized: \"paymentCycle_SEMI_ANNUALLY_Capitalized\",
+        paymentCycle_QUARTER_Capitalized: \"paymentCycle_QUARTER_Capitalized\",
+        paymentCycle_QUARTERLY_Capitalized: \"paymentCycle_QUARTERLY_Capitalized\",
+        paymentCycle_MONTH_Capitalized: \"paymentCycle_MONTH_Capitalized\",
+        paymentCycle_MONTHLY_Capitalized: \"paymentCycle_MONTHLY_Capitalized\",
+        paymentCycle_ONE_TIME: \"paymentCycle_ONE_TIME\",
+        paymentCycle_YEARS: \"paymentCycle_YEARS\",
+        paymentCycle_YEAR: \"paymentCycle_YEAR\",
+        paymentCycle_YEARLY: \"paymentCycle_YEARLY\",
+        paymentCycle_SEMI_ANNUALLY: \"paymentCycle_SEMI_ANNUALLY\",
+        paymentCycle_QUARTER: \"paymentCycle_QUARTER\",
+        paymentCycle_QUARTERLY: \"paymentCycle_QUARTERLY\",
+        paymentCycle_MONTH: \"paymentCycle_MONTH\",
+        paymentCycle_MONTHLY: \"paymentCycle_MONTHLY\",
+        premiumServiceType_IMAGES_plural_capitalized: \"premiumServiceType_IMAGES_plural_capitalized\",
+        premiumServiceType_IMAGES_plural: \"premiumServiceType_IMAGES_plural\",
+        premiumServiceType_IMAGES_capitalized: \"premiumServiceType_IMAGES_capitalized\",
+        premiumServiceType_IMAGES: \"premiumServiceType_IMAGES\",
+        premiumServiceType_TPA_plural_capitalized: \"premiumServiceType_TPA_plural_capitalized\",
+        premiumServiceType_TPA_plural: \"premiumServiceType_TPA_plural\",
+        premiumServiceType_TPA_capitalized: \"premiumServiceType_TPA_capitalized\",
+        premiumServiceType_TPA: \"premiumServiceType_TPA\",
+        premiumServiceType_MAILBOX_plural_capitalized: \"premiumServiceType_MAILBOX_plural_capitalized\",
+        premiumServiceType_MAILBOX_plural: \"premiumServiceType_MAILBOX_plural\",
+        premiumServiceType_MAILBOX_capitalized: \"premiumServiceType_MAILBOX_capitalized\",
+        premiumServiceType_MAILBOX: \"premiumServiceType_MAILBOX\",
+        premiumServiceType_DOMAIN_plural_capitalized: \"premiumServiceType_DOMAIN_plural_capitalized\",
+        premiumServiceType_DOMAIN_plural: \"premiumServiceType_DOMAIN_plural\",
+        premiumServiceType_DOMAIN_capitalized: \"premiumServiceType_DOMAIN_capitalized\",
+        premiumServiceType_DOMAIN: \"premiumServiceType_DOMAIN\",
+        premiumServiceType_WIX_PLAN_withoutPremiumPrefix_plural_capitalized: \"premiumServiceType_WIX_PLAN_withoutPremiumPrefix_plural_capitalized\",
+        premiumServiceType_WIX_PLAN_withoutPremiumPrefix_plural: \"premiumServiceType_WIX_PLAN_withoutPremiumPrefix_plural\",
+        premiumServiceType_WIX_PLAN_withoutPremiumPrefix_capitalized: \"premiumServiceType_WIX_PLAN_withoutPremiumPrefix_capitalized\",
+        premiumServiceType_WIX_PLAN_withoutPremiumPrefix: \"premiumServiceType_WIX_PLAN_withoutPremiumPrefix\",
+        premiumServiceType_WIX_PLAN_plural_capitalized: \"premiumServiceType_WIX_PLAN_plural_capitalized\",
+        premiumServiceType_WIX_PLAN_plural: \"premiumServiceType_WIX_PLAN_plural\",
+        premiumServiceType_WIX_PLAN_capitalized: \"premiumServiceType_WIX_PLAN_capitalized\",
+        premiumServiceType_WIX_PLAN: \"premiumServiceType_WIX_PLAN\"
+      },
+      taxType: {
+        japan_jct: \"japan_jct\",
+        eu_vat: \"eu_vat\",
+        regular: \"regular\"
+      }
+    }
+  };
+  a.translations(\"en\", b), a.translations(b), a.preferredLanguage && a.preferredLanguage(\"en\");
+}]).value(\"preferredLanguage\", \"en\");"
+`;
+
+exports[`test longer test works 1`] = `
+"\"use strict\";
+
+try {
+  angular.module(\"mpContainerTranslations\");
+} catch (e) {
+  angular.module(\"mpContainerTranslations\", [\"pascalprecht.translate\"]);
+}
+angular.module(\"mpContainerTranslations\").config([\"$translateProvider\", function (a) {
+  var b = {
+    manage_premium: {
+      modals: {
+        domain_connection_error_purchased_elsewhere_support_link: \"domain_connection_error_purchased_elsewhere_support_link\",
+        restart_connection_wizard: \"restart_connection_wizard\",
+        continue: \"continue\",
+        cancel: \"cancel\",
+        close: \"close\",
+        check_domain_connection: {
+          to_make_sure_restart_wizard: \"to_make_sure_restart_wizard\",
+          does_not_point_to_wix_error: \"does_not_point_to_wix_error\",
+          general_error: \"general_error\",
+          title: \"title\"
+        },
+        domain_connection_confirmed: {
+          congratulations: \"congratulations\",
+          title: \"title\"
+        }
+      },
+      container: {
+        header_billing_and_payments: \"header_billing_and_payments\",
+        header_mailboxes: \"header_mailboxes\",
+        header_domains: \"header_domains\",
+        header_premium_plan: \"header_premium_plan\",
+        page_title: \"page_title\"
+      },
+      container_premium: \"container_premium\"
+    }
+  };
+  a.translations(\"en\", b), a.translations(b), a.preferredLanguage && a.preferredLanguage(\"en\");
+}]).value(\"preferredLanguage\", \"en\");"
+`;
+
+exports[`test simplest test works 1`] = `
 "
-const baz = 1;
-if (baz) console.log(baz);"
+\"use strict\";
+
+try {
+  angular.module(\"mpContainerTranslations\");
+} catch (e) {
+  angular.module(\"mpContainerTranslations\", [\"pascalprecht.translate\"]);
+}
+angular.module(\"mpContainerTranslations\").config([\"$translateProvider\", function (a) {
+  var b = {
+    manage_premium: {
+      modals: {
+        domain_connection_error_purchased_elsewhere_support_link: \"domain_connection_error_purchased_elsewhere_support_link\",
+        restart_connection_wizard: \"restart_connection_wizard\",
+        continue: \"continue\"
+      }
+    }
+  };
+  a.translations(\"en\", b), a.translations(b), a.preferredLanguage && a.preferredLanguage(\"en\");
+}]).value(\"preferredLanguage\", \"en\");"
 `;
