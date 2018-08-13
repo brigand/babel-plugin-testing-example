@@ -1,4 +1,4 @@
-A simple project deomonstrating unit testing of babel plugins.
+A simple project demonstrating unit testing of babel plugins.
 
 ```sh
 npm install
